@@ -209,3 +209,75 @@ body {
     font-style: normal;
     line-height: 2.5rem;
 }
+
+@media (max-width: 1024px) {
+    .backg-top,
+    .backg-bottom {
+        display: none;
+    }
+
+    .container {
+        top: 0;
+        max-width: 390px;
+        height: auto;
+        margin: 4rem;
+
+        border: 1px solid rebeccapurple;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        height: auto;
+    }
+
+    .title {
+        margin-bottom: 4.8rem;
+    }
+
+    .title h1,
+    p {
+        text-align: center;
+    }
+
+    .ratings {
+        width: auto;
+    }
+
+    .rating {
+        flex-direction: column;
+        align-items: center;
+
+        padding-left: 0;
+    }
+
+    .rating ul {
+        margin: 0rem 0rem 1.6rem 0rem;
+    }
+
+    .rating:nth-child(1),
+    .rating:nth-child(2),
+    .rating:nth-child(3) {
+        align-self: auto;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        height: auto;
+    }
+
+    .card:nth-child(1),
+    .card:nth-child(2),
+    .card:nth-child(3) {
+        align-self: center;
+    }
+
+    .card:nth-child(2) {
+        margin: 2rem 0rem;
+    }
+}
