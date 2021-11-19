@@ -1,4 +1,8 @@
+/*::::::::::: Import Fonts ::::::::::*/
+
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+/*:::::::::::: Variables ::::::::::::*/
 
 :root {
     --very-dark-magenta: hsl(300, 43%, 22%);
@@ -33,7 +37,7 @@ body {
 
 .backg {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 
     width: 100vw;
     height: 100vh;
@@ -106,9 +110,8 @@ body {
 .ratings {
     display: flex;
     flex-direction: column;
-    align-items: center;
 
-    width: 545px;
+    width: 540px;
 
     font-weight: 700;
     color: var(--very-dark-magenta);
@@ -210,6 +213,8 @@ body {
     line-height: 2.5rem;
 }
 
+/*::::::: Responsive devices ::::::::*/
+
 @media (max-width: 1024px) {
     .backg-top,
     .backg-bottom {
@@ -221,8 +226,6 @@ body {
         max-width: 390px;
         height: auto;
         margin: 4rem;
-
-        border: 1px solid rebeccapurple;
     }
 
     .top {
@@ -249,6 +252,8 @@ body {
     .rating {
         flex-direction: column;
         align-items: center;
+
+        width: auto;
 
         padding-left: 0;
     }
