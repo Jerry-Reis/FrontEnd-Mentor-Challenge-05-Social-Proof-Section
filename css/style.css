@@ -48,7 +48,7 @@ body {
 .backg-top {
     flex: 1;
 
-    background-image: url(../images/bg-pattern-top-desktop.svg);
+    background-image: url('../images/bg-pattern-top-desktop.svg');
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -59,7 +59,7 @@ body {
 .backg-bottom {
     flex: 1;
 
-    background-image: url(../images/bg-pattern-bottom-desktop.svg);
+    background-image: url('../images/bg-pattern-bottom-desktop.svg');
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -78,6 +78,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    margin: 8rem 2.5rem;
 }
 
 .top {
@@ -216,7 +218,15 @@ body {
 /*::::::: Responsive devices ::::::::*/
 
 @media (max-width: 1024px) {
-    .backg-top,
+    .backg-top {
+        background-image: url('../images/bg-pattern-top-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        position: relative;
+        top: 0px;
+    }
+
     .backg-bottom {
         display: none;
     }
@@ -225,7 +235,7 @@ body {
         top: 0;
         max-width: 390px;
         height: auto;
-        margin: 4rem;
+        margin: 8rem 2.5rem;
     }
 
     .top {
@@ -234,6 +244,8 @@ body {
         justify-content: center;
 
         height: auto;
+
+        margin-bottom: 5rem;
     }
 
     .title {
@@ -243,6 +255,14 @@ body {
     .title h1,
     p {
         text-align: center;
+    }
+
+    .title h1 {
+        font-size: 2.9rem;
+    }
+
+    .title p {
+        font-size: 1.4rem;
     }
 
     .ratings {
@@ -284,5 +304,9 @@ body {
 
     .card:nth-child(2) {
         margin: 2rem 0rem;
+    }
+
+    .card cite {
+        font-size: 1.28rem;
     }
 }
